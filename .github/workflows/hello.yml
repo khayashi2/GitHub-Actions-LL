@@ -43,5 +43,10 @@ jobs:
   Job-4:
     needs: [Job-1, Job-2, Job-3]
     name: Fourth job
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Echo Date
+      run: echo date
     
