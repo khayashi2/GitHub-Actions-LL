@@ -20,7 +20,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Echo Date
-      run: echo date
+      run: date
     
   Job-2:
     name: Second job
@@ -29,7 +29,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Echo Date
-      run: echo %date%
+      run: date
   
   Job-3:
     name: Third job
@@ -48,5 +48,5 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Echo Date
-      run: echo date
+      run: date
     
